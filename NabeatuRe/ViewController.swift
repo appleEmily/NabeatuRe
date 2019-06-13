@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
     
-    var number:Int!
+    var number:Int! = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         if number % 3 == 0 {
             image.image = UIImage(named: "mask.png")
         } else {
-            image.image = UIImage(named: "image-6.png")
+            image.image = UIImage(named: "images-6.jpeg")
         }
     }
     
@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     @IBAction func atu(_ sender: Any) {
         number = 0
         label.text = String(number)
+        image.image = UIImage(named: "images-5.jpeg")
         
     }
     
